@@ -53,7 +53,7 @@
       hx-indicator="#indicator"
     >
       <h2>EPISÓDIOS</h2>
-      <div id="episodes"></div>
+      <div style="width: 40%" id="episodes"></div>
       <div class="d-flex justify-content-center align-items-center m-3">
         <div id="indicator" class="spinner-border htmx-indicator" role="status">
           <span class="visually-hidden">Loading...</span>
