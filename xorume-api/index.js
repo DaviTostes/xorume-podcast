@@ -70,7 +70,7 @@ app.get("/episodes", async (_, res) => {
               <div class="card m-2 container-fluid" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">${item.name}</h5>
-                  <p class="card-text">Data: ${new Date(item.time.split("T")[0]).toLocaleDateString()}</p>
+                  <p class="card-text">Data: ${new Date(item.time).toLocaleString().split(",")[0]}</p>
                   <button 
                     hx-get="/episode?name=${item.name}&path=${item.fullPath}" 
                     hx-target="#container"
